@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab5.HelloController">
+    <children>
+        <HBox prefHeight="316.0" prefWidth="600.0">
+            <children>
+                <VBox prefHeight="350.0" prefWidth="250.0">
+                    <children>
+                        <Label text="Sender" />
+                        <RadioButton fx:id="receiver1" mnemonicParsing="false" selected="true" text="Soyz" />
+                        <RadioButton fx:id="receiver2" mnemonicParsing="false" text="Protocol" />
+                        <RadioButton fx:id="receiver3" mnemonicParsing="false" text="Sputnik" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="350.0" prefWidth="250.0">
+                    <children>
+                        <Label text="Gift" />
+                        <RadioButton fx:id="gift1" mnemonicParsing="false" selected="true" text="Candies" />
+                        <RadioButton fx:id="gift2" mnemonicParsing="false" text="Headphones" />
+                        <RadioButton fx:id="gift3" mnemonicParsing="false" text="Sertificate" />
+                        <RadioButton fx:id="gift4" mnemonicParsing="false" text="Phone" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="350.0" prefWidth="250.0">
+                    <children>
+                        <Label text="Concert" />
+                        <RadioButton fx:id="no" mnemonicParsing="false" selected="true" text="No" />
+                        <RadioButton fx:id="yes" mnemonicParsing="false" text="Yes" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+
+        <VBox alignment="CENTER" spacing="10" prefHeight="400.0">
+            <Button fx:id="button" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="26.0" prefWidth="124.0" text="Подсчитать" style="-fx-background-color: red;" />
+            <Label fx:id="label" prefHeight="18.0" prefWidth="133.0" text="Label" visible="false" />
+        </VBox>
+    </children>
+</VBox>
